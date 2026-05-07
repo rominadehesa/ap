@@ -6,7 +6,7 @@
         <!-- Header -->
         <div class="flex justify-between items-center mb-8">
             <div>
-                <h1 class="text-2xl font-bold text-[#1a0a19]">Propiedades</h1>
+                <h1 class="text-2xl font-bold text-[#1a0a19] mb-2">Propiedades</h1>
                 <p class="text-sm text-gray-500">Gestión de propiedades</p>
             </div>
 
@@ -79,21 +79,21 @@
 
                                 <!-- Galeria -->
                                 <td class="p-4 text-right whitespace-nowrap">
-                                    <div class="flex justify-end gap-3 text-sm">
+                                    <div class="flex gap-3 text-sm">
                                         <a href="{{ route('propiedades.galeria', $propiedad->id) }}" class="text-blue-600 hover:underline">Editar galeria</a>
                                     </div>
                                 </td>
 
                                 <!-- Caracteristicas -->
                                 <td class="p-4 text-right whitespace-nowrap">
-                                    <div class="flex justify-end gap-3 text-sm">
+                                    <div class="flex  gap-3 text-sm">
                                         <a href="{{ route('propiedades.caracteristicas', $propiedad->id) }}" class="text-blue-600 hover:underline">Editar caracteristicas</a>
                                     </div>
                                 </td>
 
                                 <!-- Acciones -->
-                                <td class="p-4 text-right whitespace-nowrap">
-                                    <div class="flex justify-end gap-3 text-sm">
+                                <td class="p-4 whitespace-nowrap">
+                                    <div class="">
 
                                         <a href="{{ route('propiedades.show', $propiedad) }}"
                                             class="text-[#1a0a19] hover:underline">

@@ -11,7 +11,7 @@
             </div>
 
             <div class="flex gap-2">
-                <a class="bg-[#1a0a19] text-white px-5 py-2 rounded-xl hover:opacity-90 whitespace-nowrap">
+                <a href="{{ route('propiedades.edit', $propiedad->id) }}" class="bg-[#1a0a19] text-white px-5 py-2 rounded-xl hover:opacity-90 whitespace-nowrap">
                     + Editar propiedad
                 </a>
 

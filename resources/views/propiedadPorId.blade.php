@@ -11,7 +11,7 @@
     <section class="flex flex-col gap-10">
 
         {{-- Volver --}}
-        <a href="#" class="text-sm font-medium" style="color: #3E153D">← Volver a propiedades</a>
+        <a href="{{ route('todas-propiedades') }}" class="text-sm font-medium" style="color: #3E153D">← Volver a propiedades</a>
 
         {{-- Encabezado --}}
         <div class="flex justify-between gap-10 items-start">
@@ -38,15 +38,15 @@
                 </div>
 
                 <div>
-                    <p>{{ $propiedad->slogan }}</p>
-                    <p>{{ $propiedad->descripcion }} Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae sit eos dolorem quos eveniet nihil omnis? Repellat tenetur natus veniam iure nihil a maxime, illum nemo optio blanditiis atque!</p>
+                    <p class="font-semibold mb-4 text-2xl">{{ $propiedad->slogan }}</p>
+                    <p class="text-sm text-gray-600">{{ $propiedad->descripcion }}</p>
                 </div>
 
             </div>
 
             <div class="w-1/2 rounded-2xl overflow-hidden">
                 @if ($propiedad->imagen_portada_url)
-                    <img src="{{ asset($propiedad->imagen_portada_url) }}" alt="Propiedad" class="w-full h-80 object-cover" />
+                    <img src="{{ asset('storage/' . $propiedad->imagen_portada_url) }}" alt="Propiedad" class="w-full h-80 object-cover" />
                 @endif
             </div>
 
@@ -61,34 +61,34 @@
 
             <div class="rounded-xl p-4 bg-white border">
                 <p class="text-xs text-gray-400 uppercase tracking-widest mb-1">Superficie total</p>
-                <p class="text-xl font-medium" style="color:#2F2F2F">{{ $propiedad->superficie_total }}<span
+                <p class="text-xl font-medium">{{ $propiedad->superficie_total }}<span
                         class="text-sm font-normal text-gray-400">m²</span></p>
             </div>
 
             <div class="rounded-xl p-4 bg-white border">
                 <p class="text-xs text-gray-400 uppercase tracking-widest mb-1">Sup. cubierta</p>
-                <p class="text-xl font-medium" style="color:#2F2F2F">{{ $propiedad->superficie_cubierta }} <span
+                <p class="text-xl font-medium">{{ $propiedad->superficie_cubierta }} <span
                         class="text-sm font-normal text-gray-400">m²</span></p>
             </div>
 
             <div class="rounded-xl p-4 bg-white border">
                 <p class="text-xs text-gray-400 uppercase tracking-widest mb-1">Dormitorios</p>
-                <p class="text-xl font-medium" style="color:#2F2F2F">{{ $propiedad->dormitorios }}</p>
+                <p class="text-xl font-medium">{{ $propiedad->dormitorios }}</p>
             </div>
 
             <div class="rounded-xl p-4 bg-white border">
                 <p class="text-xs text-gray-400 uppercase tracking-widest mb-1">Baños</p>
-                <p class="text-xl font-medium" style="color:#2F2F2F">{{ $propiedad->banios }}</p>
+                <p class="text-xl font-medium">{{ $propiedad->banios }}</p>
             </div>
 
             <div class="rounded-xl p-4 bg-white border">
                 <p class="text-xs text-gray-400 uppercase tracking-widest mb-1">Ambientes</p>
-                <p class="text-xl font-medium" style="color:#2F2F2F">{{ $propiedad->ambientes }}</p>
+                <p class="text-xl font-medium">{{ $propiedad->ambientes }}</p>
             </div>
 
             <div class="rounded-xl p-4 bg-white border">
                 <p class="text-xs text-gray-400 uppercase tracking-widest mb-1">Pisos</p>
-                <p class="text-xl font-medium" style="color:#2F2F2F">{{ $propiedad->cant_pisos }}</p>
+                <p class="text-xl font-medium">{{ $propiedad->cant_pisos }}</p>
             </div>
         </div>
 
@@ -102,7 +102,7 @@
                     <div class="rounded-2xl overflow-hidden hover:-translate-y-1 transition duration-300 bg-white">
                         <img src="{{ asset('storage/' . $item->url) }}" class="h-40 w-full object-cover" />
                             <div class="p-4">
-                                <p class="font-medium mb-1" style="color:#2F2F2F">{{ $item->nombre }}</p>
+                                <p class="font-medium mb-1">{{ $item->nombre }}</p>
                                 <p class="text-sm text-gray-400 leading-snug">
                                     {{ $item->descripcion }}
                                 </p>

@@ -122,7 +122,7 @@
                     <p>Seleccionamos las mejores oportunidades del mercado. Desde casas y departamentos hasta lotes,
                         tenemos opciones para cada necesidad y presupuesto.</p>
                     <br>
-                    <a href="#"
+                    <a href="{{ route('todas-propiedades') }}"
                         class="text-[#3E153D] border-b border-[#3E153D] text-md font-extrabold transition">
                         Ver todas las propiedades →
                     </a>
@@ -137,46 +137,72 @@
                             Destacadas
                         </button>
                     </div>
-
-                    <button class="px-4 py-2 bg-[#3E153D] text-white rounded-lg text-sm hover:bg-[#2c0f2b] transition">
-                        Buscar
-                    </button>
-
                 </div>
                 <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pt-2 pb-2">
-                    <article class="bg-white w-80 rounded-lg shadow p-1 shrink-0">
-                        <div class="w-full h-[150px] bg-[#f1f1f1]">
-                        </div>
-                        <div class="px-6 py-8">
-                            <p class="font-semibold text-lg leading-[1.2] mb-4">Casa de dos ambientes y un balcon
-                                soñado</p>
-                            <p class="leading-[1.2] w-[90%] text-gray-400 text-regular text-sm"> Lorem ipsum dolor sit
-                                amet, consectetur adipisicing elit. Dolorem error quo commodi earum at, iure placeat ut
-                                provident.</p>
-                        </div>
-                    </article>
-                    <article class="bg-white w-80 rounded-lg shadow p-1 shrink-0">
-                        <div class="w-full h-[150px] bg-[#f1f1f1]">
-                        </div>
-                        <div class="px-6 py-8">
-                            <p class="font-semibold text-lg leading-[1.2] mb-4">Casa de dos ambientes y un balcon
-                                soñado</p>
-                            <p class="leading-[1.2] w-[90%] text-gray-400 text-regular text-sm"> Lorem ipsum dolor sit
-                                amet, consectetur adipisicing elit. Dolorem error quo commodi earum at, iure placeat ut
-                                provident.</p>
-                        </div>
-                    </article>
-                    <article class="bg-white w-80 rounded-lg shadow p-1 shrink-0">
-                        <div class="w-full h-[150px] bg-[#f1f1f1]">
-                        </div>
-                        <div class="px-6 py-8">
-                            <p class="font-semibold text-lg leading-[1.2] mb-4">Casa de dos ambientes y un balcon
-                                soñado</p>
-                            <p class="leading-[1.2] w-[90%] text-gray-400 text-regular text-sm"> Lorem ipsum dolor sit
-                                amet, consectetur adipisicing elit. Dolorem error quo commodi earum at, iure placeat ut
-                                provident.</p>
-                        </div>
-                    </article>
+                    @foreach ($propiedades as $item)
+                        <article class="bg-white w-80 rounded-lg shadow p-1 shrink-0">
+                            <div class="w-full h-[150px] bg-[#f1f1f1]">
+                                <img src="{{ asset('storage/' . $item->imagen_portada_url) }}"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="px-6 py-8">
+                                <p class="font-semibold text-sm text-gray-600 leading-[1.2] mb-2">{{ $item->slogan }}
+                                </p>
+                                <p class="leading-[1.2] w-[90%] font-bold text-gray-800 text-lg mb-2">
+                                    {{ $item->titulo }}</p>
+                                <div class="text-sm text-gray-500">
+                                    {{ $item->direccion }}, {{ $item->ciudad }} - {{ $item->zona }} <br>
+                                    {{ $item->ambientes }} ambientes - {{ $item->superficie_cubierta }} m²
+                                </div>
+                                <!-- FOOTER -->
+                                <div class="flex items-center justify-between mt-5 pt-4 border-t border-gray-100">
+
+                                    <!-- FEATURES -->
+                                    <div class="flex flex-wrap gap-2">
+
+                                        @if ($item->tiene_pileta)
+                                            <span
+                                                class="text-[11px] bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">
+                                                Pileta
+                                            </span>
+                                        @endif
+
+                                        @if ($item->tiene_cochera)
+                                            <span
+                                                class="text-[11px] bg-gray-100 text-gray-700 px-2.5 py-1 rounded-full">
+                                                Cochera
+                                            </span>
+                                        @endif
+
+                                        @if ($item->tiene_parrilla)
+                                            <span
+                                                class="text-[11px] bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full">
+                                                Parrilla
+                                            </span>
+                                        @endif
+
+                                    </div>
+
+                                    <!-- BOTON -->
+                                    <a href="{{ route('ver-propiedad', $item->id) }}"
+                                        class="inline-flex items-center gap-1 text-sm font-semibold text-[#1a0a19] hover:text-[#4b1d49] transition">
+
+                                        Ver más
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5l7 7-7 7" />
+
+                                        </svg>
+
+                                    </a>
+
+                                </div>
+                            </div>
+                        </article>
+                    @endforeach
                 </div>
             </div>
         </div>
