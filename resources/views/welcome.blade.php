@@ -32,7 +32,7 @@
 
             <h1 class="text-3xl md:text-5xl text-start md:text-center text-[#fff] leading-tight mb-4">
                 Llegaste a un lugar donde tu propiedad<br class="none md:block"> <strong
-                    class="text-[#F2BF14] opacity-0 animate-[fadeDown_2s_ease-out_forwards]">
+                    class="text-[#F2BF14] md:opacity-0 md:animate-[fadeDown_2s_ease-out_forwards]">
                     está en buenas manos</strong>
             </h1>
 
