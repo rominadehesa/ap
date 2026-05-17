@@ -22,7 +22,7 @@
     --primary-color: #3E153D;
     --secondary-color: #471C46;
     --accent-color: #F2BF14;
-    --accent-color-less: #fff6d8;
+    --accent-color-less: #fff6d8e6;
     --background-gray: #471c4630;
     --text-black: #2F2F2F;
 }
@@ -31,9 +31,21 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
-body > section, footer {
+body>section,
+footer, header > main{
     padding: 20vh 15vw;
 }
+
+nav {
+    padding: 0vh 15vw;
+}
+
+
+#quiénessomos .contenedor {
+    padding: 20vh 15vw;
+    padding-right: 0;
+}
+
 
 footer {
     background-color: var(--primary-color);
@@ -45,15 +57,23 @@ footer {
 
 h1 {
     font-weight: 900;
+    color: var(--text-black);
     font-family: "DM Sans", sans-serif;
 }
 
-header nav{
-    background-color:var(--text-black);
+header {
+    background-image: url('../../public/images/portada.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header nav {
+    background-color: var(--text-black);
 }
 
 header main {
-    height: 40vh;
+    height: auto;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 nav ul li {
@@ -62,7 +82,7 @@ nav ul li {
 
 #btn-primary {
     background-color: var(--accent-color);
-    color:  var(--secondary-color);
+    color: var(--secondary-color);
     border-radius: 40px;
     padding: 10px 30px;
 }
@@ -76,16 +96,19 @@ nav ul li {
 }
 
 #explorar {
-    background-color: #FDF6DC;
     color: var(--text-black);
 }
 
 #contacto {
-    background-color: #eee;
     color: var(--text-black);
 }
 
-#soluciones .span-tag, #explorar .span-tag, #contacto .span-tag, #quiénessomos .span-tag{
+
+.span-tag,
+#soluciones .span-tag,
+#explorar .span-tag,
+#contacto .span-tag,
+#quiénessomos .span-tag {
     background-color: var(--accent-color);
     color: var(--secondary-color);
     padding: 1vh 6vh;
@@ -94,7 +117,7 @@ nav ul li {
     border: 1px solid var(--secondary-color);
 }
 
-#quiénessomos #valores {
+#valores {
     font-family: "DM Sans", sans-serif;
     background-color: var(--accent-color-less);
     border-radius: 20px;
@@ -103,11 +126,11 @@ nav ul li {
     color: var(--accent-color);
 }
 
-#quiénessomos #valores p {
+#valores p {
     line-height: 120%;
 }
 
-#quiénessomos #valores h3 {
+#valores h3 {
     line-height: auto;
     font-family: "DM Sans", sans-serif;
 }
@@ -118,22 +141,50 @@ nav ul li {
     height: 50vh;
     border-radius: 16px;
     background: white;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: 0.3s ease;
 }
 
 .card-servicio:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 @keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Celular */
+@media (max-width: 768px) {
+
+    body>section,
+    footer {
+        padding: 10vh 8vw;
+    }
+
+    #quiénessomos .contenedor {
+        padding: 8vh 10vw;
+    }
+
+    #soluciones .span-tag,
+    #explorar .span-tag,
+    #contacto .span-tag,
+    #quiénessomos .span-tag {
+        padding: 0.5vh 2vh;
+    }
+
+
+    header main {
+        height: 40vh;
+    }
+
 }

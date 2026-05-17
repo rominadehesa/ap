@@ -11,7 +11,7 @@
         </main>
     </header>
 
-    <section id="explorar" class="bg-white">
+    <section id="explorar" class="bg-[#fafafa]">
 
         <!-- Header -->
         <div class="mb-10">
@@ -29,6 +29,10 @@
 
                 <form method="GET" class="space-y-5">
                     <!-- TIPO -->
+                     <span
+                        class="inline-block text-[11px] tracking-[0.25em] uppercase text-[#F2BF14] font-semibold mb-3">
+                        FILTRAR
+                    </span>
                     <div>
                         <label class="text-sm text-gray-500">Tipo</label>
 

@@ -1,23 +1,39 @@
-<footer class="flex justify-between items-end gap-20">
-        <div class="w-[25%]">
-            <img src="{{  asset('images/ap ayb.png') }}" alt="" srcset="" class="w-[200px]">
-            <br>
-            <p class="text-white text-sm">Soluciones inmobiliarias claras, responsables y personalizadas en cada operación.</p>
-        </div>
-        <div>
-            <ul class="text-white flex flex-col gap-4 text-md">
-                <a href="#soluciones"><li>Soluciones</li></a>
-                <a href="#explorar"><li>Explorar</li></a>
-                <a href="#quiénessomos"><li>Quiénes somos</li></a>
-                <a href="contacto"><li>Contacto</li></a>
-            </ul>
-        </div>
-        <div>
-            <ul class="text-white flex flex-col gap-4 text-md">
-                <a href=""><li>Instagram</li></a>
-                <a href=""><li>Email</li></a>
-                <a href=""><li>WhatsApp</li></a>
-                <a href=""><li>Oficinas</li></a>
-            </ul>
-        </div>
-    </footer>
+<footer class="md:flex md:justify-between md:items-end md:gap-20">
+    <div class="w-full md:w-[25%] mb-6">
+        <img src="{{ asset('images/logo/logo aps b .png') }}" alt="" srcset="" class="w-[100px]">
+        <br>
+        <p class="text-white text-lg">Soluciones inmobiliarias claras, responsables y personalizadas en cada operación.</p>
+    </div>
+    <div class="sm:mt-10 md:mt-0">
+        <ul class="text-white flex flex-col text-md">
+            <a href="#soluciones" class="py-3 border-b border-white/10">
+                <li>Soluciones</li>
+            </a>
+            <a href="#explorar" class="py-3 border-b border-white/10">
+                <li>Explorar</li>
+            </a>
+            <a href="#quiénessomos" class="py-3 border-b border-white/10">
+                <li>Quiénes somos</li>
+            </a>
+            <a href="contacto" class="py-3">
+                <li>Contacto</li>
+            </a>
+        </ul>
+    </div>
+    <div>
+        <ul class="text-white flex flex-col text-md">
+            <a href="" class="py-3 border-b border-white/10">
+                <li>Instagram</li>
+            </a>
+            <a href="" class="py-3 border-b border-white/10">
+                <li>Email</li>
+            </a>
+            <a href="" class="py-3 border-b border-white/10">
+                <li>WhatsApp</li>
+            </a>
+            <a href="" class="py-3">
+                <li>Oficinas</li>
+            </a>
+        </ul>
+    </div>
+</footer>

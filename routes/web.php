@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/inicio', [PublicController::class, 'inicio'])->name('inicio');
 Route::get('/todas-propiedades', [PublicController::class, 'verPropiedades'])->name('todas-propiedades');
 Route::get('/ver-propiedad/{id}', [PublicController::class, 'verPropiedadPorId'])->name('ver-propiedad');
-
+Route::get('/quienes-somos', [PublicController::class, 'quienesSomos'])->name('quienes-somos');
 
 Route::resource('propiedades', PropiedadController::class);
 Route::get('/propiedades/{id}/galeria', [PropiedadController::class, 'galeria'])

@@ -6,7 +6,11 @@
 <body>
     <header>
         @include('frames.nav')
+        <main>
+
+        </main>
     </header>
+
 
     <section class="flex flex-col gap-10">
 
@@ -14,9 +18,9 @@
         <a href="{{ route('todas-propiedades') }}" class="text-sm font-medium" style="color: #3E153D">← Volver a propiedades</a>
 
         {{-- Encabezado --}}
-        <div class="flex justify-between gap-10 items-start">
+        <div class="w-full md:flex md:justify-between gap-10 items-start">
 
-            <div class="flex flex-col gap-6 w-1/2">
+            <div class="flex flex-col gap-6 md:w-1/2">
 
                 <div class="flex gap-2">
                     <span class="text-md font-medium px-5 py-2 rounded-full bg-[#F2BF14] text-[#3E153D]">{{ $propiedad->tipo }}</span>
@@ -28,8 +32,8 @@
                     {{ $propiedad->titulo }}
                 </h1>
 
-                <div class="flex items-center gap-2 text-sm text-gray-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
+                <div class="flex items-start gap-2 text-md text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
                         fill="currentColor">
                         <path
                             d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
@@ -44,7 +48,7 @@
 
             </div>
 
-            <div class="w-1/2 rounded-2xl overflow-hidden">
+            <div class=" w-full md:w-1/2 rounded-2xl overflow-hidden">
                 @if ($propiedad->imagen_portada_url)
                     <img src="{{ asset('storage/' . $propiedad->imagen_portada_url) }}" alt="Propiedad" class="w-full h-80 object-cover" />
                 @endif
@@ -97,7 +101,7 @@
     <section class="bg-[#471C46]">
         {{-- Características --}}
             <p class="text-md text-white uppercase tracking-widest mb-10">Características</p>
-            <div class="grid grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
                 @foreach ($propiedad->caracteristicas as $item) 
                     <div class="rounded-2xl overflow-hidden hover:-translate-y-1 transition duration-300 bg-white">
                         <img src="{{ asset('storage/' . $item->url) }}" class="h-40 w-full object-cover" />
@@ -192,31 +196,17 @@
 
     </section>
 
-    <section id="contacto">
-        <div class="flex justify-between items-start gap-20">
+    <section id="contacto" class="bg-[#fafafa]">
+        <div class="md:flex md:justify-between items-start gap-20">
 
-            <div class="w-[40%]">
-                <h1 class="text-5xl text-start mb-6">¿Deseas recibir mas información?</h1>
+            <div class="w-full md:w-[40%]">
+                <h1 class=" text-4xl md:text-5xl text-start mb-6">Dejanos tu consulta sobre esta propiedad</h1>
                 <p class="leading-[1.7] mb-8">Completá el formulario y nos ponemos en contacto a la
                     brevedad para asesorarte sobre esta propiedad.</p>
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center gap-3">
-                        <span class="w-4 h-4 rounded-full bg-[#F2BF14]"></span>
-                        <span class="text-sm text-[#3E153D] font-medium">Respuesta en menos de 24hs</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <span class="w-4 h-4 rounded-full bg-[#F2BF14]"></span>
-                        <span class="text-sm text-[#3E153D] font-medium">Asesoramiento sin compromiso</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <span class="w-4 h-4 rounded-full bg-[#F2BF14]"></span>
-                        <span class="text-sm text-[#3E153D] font-medium">Atención personalizada</span>
-                    </div>
-                </div>
             </div>
 
-            <form class="w-[50%] bg-white border border-gray-100 shadow-sm px-8 py-8 rounded-2xl flex flex-col gap-4">
-                <div class="flex gap-4">
+            <form class="w-full md:w-[50%] bg-white border border-gray-100 shadow-sm px-8 py-8 rounded-2xl flex flex-col gap-4">
+                <div class="md:flex gap-4">
                     <div class="flex flex-col gap-1 w-full">
                         <label class="text-xs text-gray-500 font-medium">Nombre</label>
                         <input type="text" placeholder="Tu nombre"
