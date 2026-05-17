@@ -104,19 +104,6 @@ nav ul li {
 }
 
 
-.span-tag,
-#soluciones .span-tag,
-#explorar .span-tag,
-#contacto .span-tag,
-#quiénessomos .span-tag {
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
-    padding: 1vh 6vh;
-    border-radius: 20px;
-    font-weight: 600;
-    border: 1px solid var(--secondary-color);
-}
-
 #valores {
     font-family: "DM Sans", sans-serif;
     background-color: var(--accent-color-less);

@@ -24,19 +24,16 @@
         <!-- HEADER -->
         <div class="text-left text-center md:px-0">
 
-            <div class="flex justify-start md:justify-center">
-                <span class="text-md mb-6 md:mb-10 span-tag">
-                    Soluciones inmobiliarias
+            <div class="flex justify-start md:justify-center mb-8 md:mb-10">
+                <span class="inline-block text-[11px] tracking-[0.25em] uppercase text-[#F2BF14] font-semibold">
+                    Conocé nuestras soluciones
                 </span>
             </div>
 
-            <h1 class="text-4xl md:text-5xl text-start md:text-center text-[#fff] leading-tight mb-4">
-                Tu propiedad en buenas manos.
-            </h1>
-
-            <h1
-                class="text-2xl md:text-5xl text-start md:text-center mb-6 md:mb-8 text-[#F2BF14] opacity-0 animate-[fadeDown_0.8s_ease-out_forwards] leading-tight">
-                Criterio, dedicación y presencia real.
+            <h1 class="text-3xl md:text-5xl text-start md:text-center text-[#fff] leading-tight mb-4">
+                Llegaste a un lugar donde tu propiedad<br class="none md:block"> <strong
+                    class="text-[#F2BF14] opacity-0 animate-[fadeDown_2s_ease-out_forwards]">
+                    está en buenas manos</strong>
             </h1>
 
             <div class="flex md:justify-center">
@@ -127,7 +124,7 @@
 
             <!-- CARD 3 -->
             <div
-                class="w-full p-6  pl-1 md:p-8 hover:border-r hover:bg-[#3E153D] hover:border-[#F2BF14] hover:rounded-lg transition-all duration-300">
+                class="w-full p-6 pl-1 md:p-8 hover:border-r hover:bg-[#3E153D] hover:border-[#F2BF14] hover:rounded-lg transition-all duration-300">
 
                 <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
