@@ -15,24 +15,79 @@
 
         <!-- Header -->
         <div class="mb-10">
-            <div class="flex justify-start">
-                <span class="text-center text-md mb-10 span-tag">Explorar</span>
-            </div>
-            <h1 class="text-3xl lg:text-5xl mt-2">Todas las propiedades</h1>
+            <h1 class="text-4xl lg:text-5xl mt-2">Todas las propiedades</h1>
         </div>
 
         <!-- Layout -->
         <div class="flex flex-col lg:flex-row gap-10">
 
-            <!-- FILTROS -->
-            <div class="w-full lg:w-1/4 p-6 shadow rounded-xl bg-white h-fit">
+            <!-- BOTON MOBILE -->
+            <div class="lg:hidden mb-5">
 
+                <button onclick="openFilters()" class="w-full py-3 rounded-xl bg-[#3E153D] text-white font-medium shadow">
+
+                    Filtrar propiedades
+
+                </button>
+
+            </div>
+
+            <!-- OVERLAY -->
+            <div id="filtersOverlay" onclick="closeFilters()" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden">
+            </div>
+
+
+            <!-- FILTROS -->
+            <div id="filtersPanel"
+                class="
+        fixed lg:static
+        top-0 left-0
+        h-screen lg:h-fit
+        w-[88%] sm:w-[420px] lg:w-1/4
+        bg-white
+        z-50 lg:z-auto
+        p-6
+        rounded-none lg:rounded-xl
+        shadow-xl lg:shadow
+        overflow-y-auto
+        transform -translate-x-full lg:translate-x-0
+        transition-transform duration-300
+    ">
+
+                <div class="flex items-center justify-between mb-6 lg:hidden">
+
+                    <h2 class="text-xl font-semibold text-[#3E153D]">
+                        Filtros
+                    </h2>
+
+                    <button onclick="closeFilters()" class="text-2xl text-gray-500">
+
+                        ✕
+
+                    </button>
+
+                </div>
+
+                <script>
+                    function openFilters() {
+
+                        document.getElementById('filtersPanel')
+                            .classList.remove('-translate-x-full');
+
+                        document.getElementById('filtersOverlay')
+                            .classList.remove('hidden');
+                    }
+
+                    function closeFilters() {
+
+                        document.getElementById('filtersPanel')
+                            .classList.add('-translate-x-full');
+
+                        document.getElementById('filtersOverlay')
+                            .classList.add('hidden');
+                    }
+                </script>
                 <form method="GET" class="space-y-5">
-                    <!-- TIPO -->
-                     <span
-                        class="inline-block text-[11px] tracking-[0.25em] uppercase text-[#F2BF14] font-semibold mb-3">
-                        FILTRAR
-                    </span>
                     <div>
                         <label class="text-sm text-gray-500">Tipo</label>
 
@@ -134,22 +189,24 @@
                         </div>
 
                     </div>
-
+                    <br>
                     <!-- BOTONES -->
-                    <div class="flex gap-2 pt-2">
-
+                    <div class="mt-8">
                         <button type="submit"
-                            class="flex-1 py-2 bg-[#3E153D] text-white rounded-md text-sm hover:bg-[#2c0f2b] transition">
+                                class="w-full flex-1 py-2 bg-[#3E153D] mb-1 text-white rounded-md text-sm hover:bg-[#2c0f2b] transition">
 
-                            Buscar
+                                Buscar
 
-                        </button>
+                            </button>
 
-                        <a href="{{ route('todas-propiedades') }}"
-                            class="px-4 py-2 rounded-md border border-gray-200 text-sm text-gray-600 hover:bg-gray-50 transition">
-
-                            Limpiar
-
+                            <a href="{{ route('todas-propiedades') }}">
+                                    
+                                <button type="button"
+                                class="w-full flex-1 py-2 bg-[#787878] text-white rounded-md text-sm hover:bg-[#585858] transition">
+                                
+                                Limpiar
+                                
+                            </button>
                         </a>
 
                     </div>
@@ -166,7 +223,7 @@
                     @foreach ($propiedades as $item)
                         <!-- CARD -->
                         <article
-                            class="group bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 mb-4">
+                            class="group bg-white border border-gray-100 rounded-2xl overflow-hidden shadow border hover:shadow-lg transition-all duration-300 mb-4">
 
                             <div class="flex flex-col md:flex-row">
 
@@ -308,19 +365,17 @@
 
                                         <!-- BOTON -->
                                         <a href="{{ route('ver-propiedad', $item->id) }}"
-                                            class="inline-flex items-center gap-1 text-sm font-semibold text-[#1a0a19] hover:text-[#4b1d49] transition">
+                                        class="text-[#f1f1f1] bg-[#3E153D] text-sm py-2 transition rounded-3xl w-8 h-8 flex items-center justify-center">
 
-                                            Ver más
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
 
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5l7 7-7 7" />
 
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M9 5l7 7-7 7" />
+                                        </svg>
 
-                                            </svg>
-
-                                        </a>
+                                    </a>
 
                                     </div>
 

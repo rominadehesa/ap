@@ -4,7 +4,7 @@
 
         <!-- Logo -->
         <a href="{{ route('inicio') }}" class="font-bold text-xl animate-fade-up">
-            <img src="{{ asset('images/logo/logo aps b .png') }}" alt="" srcset="" class="w-[50px]">
+        
         </a>
 
         <!-- Desktop menu -->
@@ -23,18 +23,18 @@
     </div>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden mt-8 flex flex-col justify-center gap-4 pb-6 h-full">
+    <div id="mobile-menu" class="hidden md:hidden mt-8 flex flex-col justify-between gap-4 pb-8">
 
-        <ul class="flex flex-col gap-4">
+        <ul class="flex flex-col text-end gap-4">
             <li><a href="{{ route('inicio') }}" class="font-semibold">Inicio</a></li>
             <li><a href="/inicio#soluciones" class="font-semibold">Soluciones</a></li>
             <li><a href="/todas-propiedades" class="font-semibold">Propiedades</a></li>
             <li><a href="/quienes-somos" class="font-semibold">Quiénes somos</a></li>
         </ul>
 
-        <br>
+        
 
-        <div class="flex items-center gap-3">
+        <div class="flex items-end justify-end gap-3">
 
             {{-- Instagram --}}
             <a href="#" target="_blank"

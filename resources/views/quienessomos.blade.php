@@ -15,8 +15,10 @@
     <section id="quiénessomos">
         <div class="md:flex md:justify-between">
             <div class="w-full md:w-[30vw]">
-                <div class="flex justify-start mb-10">
-                    <span class="text-center text-md span-tag">Quienés somos</span>
+                <div class="flex justify-start  mb-8 md:mb-10">
+                    <span class="inline-block text-[16px] tracking-[0.10em] uppercase text-[#F2BF14] font-semibold">
+                       Quiénes somos
+                    </span>
                 </div>
                 <h1 class="text-start text-4xl md:text-5xl">Más que una inmobiliaria,</h1>
                 <h1 class="text-start text-4xl md:text-5xl mb-8 text-[#471C46]">
@@ -34,33 +36,33 @@
                         class="flex items-center gap-6 reveal opacity-0 translate-y-2 transition duration-1200 ease-out"
                         id="valores">
                         <div class="w-full">
-                            <h3 class="text-4xl md:text-6xl font-bold">+<span class="counter" data-target="10">0></span>
+                            <h3 class="text-3xl md:text-4xl md:text-6xl font-bold">+<span class="counter" data-target="10">0></span>
                             </h3>
                         </div>
                         <div>
-                            <p class="text-md">años de <br> experiencia</p>
+                            <p class="text-md text-end">años de <br> experiencia</p>
                         </div>
                     </article>
                     <article
                         class="flex items-center gap-6 reveal opacity-0 translate-y-2 transition duration-1200 ease-out"
                         id="valores">
                         <div class="w-full">
-                            <h3 class="text-4xl md:text-6xl font-bold">+<span class="counter" data-target="80">0></span>
+                            <h3 class="text-3xl md:text-4xl md:text-6xl font-bold">+<span class="counter" data-target="80">0></span>
                             </h3>
                         </div>
                         <div>
-                            <p class="text-md">operaciones <br> realizadas</p>
+                            <p class="text-md text-end">operaciones <br> realizadas</p>
                         </div>
                     </article>
                     <article
                         class="flex items-center gap-6 reveal opacity-0 translate-y-2 transition duration-3000 ease-out"
                         id="valores">
                         <div class="w-full">
-                            <h3 class="text-4xl md:text-6xl font-bold"><span class="counter"
+                            <h3 class="text-3xl md:text-4xl md:text-6xl font-bold"><span class="counter"
                                     data-target="100">0></span>%</h3>
                         </div>
                         <div>
-                            <p class="text-md">acompañamiento <br> personalizado</p>
+                            <p class="text-md text-end">acompañamiento <br> personalizado</p>
                         </div>
                     </article>
                 </div>
@@ -70,10 +72,11 @@
 
     <section class="bg-[#f7eef9]">
         <div class="text-center mb-14">
-            <span
-                class="inline-block text-[11px] tracking-[0.25em] uppercase text-[#F2BF14] font-semibold mb-3">
-                Nuestro equipo
-            </span>
+            <div class="flex justify-center  mb-8 md:mb-10">
+                    <span class="inline-block text-[16px] tracking-[0.10em] uppercase text-[#F2BF14] font-semibold">
+                        Nuestro equipo
+                    </span>
+                </div>
 
             <h1 class="text-3xl md:text-5xl font-bold text-[#2F2F2F]">
                Quiénes somos detras de APS
@@ -136,10 +139,12 @@
     <section class="bg-[#F8F8F8] py-20">
 
     <div class="text-center mb-14">
-        <span
-            class="inline-block text-[11px] tracking-[0.25em] uppercase text-[#F2BF14] font-semibold mb-3">
-            Sucursales
-        </span>
+         <div class="flex justify-center  mb-8 md:mb-10">
+                    <span class="inline-block text-[16px] tracking-[0.10em] uppercase text-[#F2BF14] font-semibold">
+                        Sucursales
+                    </span>
+                </div>
+
 
         <h1 class="text-3xl md:text-5xl font-bold text-[#2F2F2F]">
             Nuestras oficinas
@@ -153,10 +158,10 @@
             class="bg-white border border-[#ECE7EC] p-12 flex flex-col items-center text-center hover:bg-[#3E153D] transition-all duration-300 group">
 
             <div
-                class="w-20 h-20 rounded-full bg-[#F8F3F8] flex items-center justify-center mb-6 group-hover:bg-white/10 transition">
+                class="w-10 h-10 md:w-20 md:h-20 rounded-full bg-[#F8F3F8] flex items-center justify-center mb-6 group-hover:bg-white/10 transition">
 
                 <svg xmlns="http://www.w3.org/2000/svg"
-                    class="w-9 h-9 text-[#3E153D] group-hover:text-white transition"
+                    class="w-8 h-8 text-[#3E153D] group-hover:text-white transition"
                     fill="none" viewBox="0 0 24 24" stroke="currentColor"
                     stroke-width="1.5">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -164,13 +169,12 @@
                 </svg>
             </div>
 
-            <h2 class="text-2xl font-bold text-[#2F2F2F] group-hover:text-white mb-2 transition">
+            <h2 class="text-md md:text-2xl font-bold text-[#2F2F2F] group-hover:text-white mb-2 transition">
                 Rauch
             </h2>
 
             <p class="text-sm text-gray-500 group-hover:text-white/70 leading-relaxed transition">
                 Atención personalizada para compra, venta y alquiler de propiedades. A cargo de Yanina Alaguibe.
-                Contacnos a través de nuestro formulario o por WhatsApp para agendar una reunión.
             </p>
         </div>
 
@@ -179,24 +183,23 @@
             class="bg-[#FAFAFA] border border-[#ECE7EC] p-12 flex flex-col items-center text-center hover:bg-[#3E153D] transition-all duration-300 group">
 
             <div
-                class="w-20 h-20 rounded-full bg-[#F8F3F8] flex items-center justify-center mb-6 group-hover:bg-white/10 transition">
+                class="w-10 h-10 md:w-20 md:h-20 rounded-full bg-[#F8F3F8] flex items-center justify-center mb-6 group-hover:bg-white/10 transition">
 
                 <svg xmlns="http://www.w3.org/2000/svg"
-                    class="w-9 h-9 text-[#3E153D] group-hover:text-white transition"
+                    class="w-8 h-8 text-[#3E153D] group-hover:text-white transition"
                     fill="none" viewBox="0 0 24 24" stroke="currentColor"
                     stroke-width="1.5">
                     <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M4 21V5a2 2 0 012-2h12a2 2 0 012 2v16M9 9h6M9 13h6M9 17h4" />
+                        d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01" />
                 </svg>
             </div>
 
-            <h2 class="text-2xl font-bold text-[#2F2F2F] group-hover:text-white mb-2 transition">
+            <h2 class="text-md md:text-2xl font-bold text-[#2F2F2F] group-hover:text-white mb-2 transition">
                 Tandil
             </h2>
 
             <p class="text-sm text-gray-500 group-hover:text-white/70 leading-relaxed transition">
-                Atención personalizada para compra, venta y alquiler de propiedades. A cargo de _____.
-                Contacnos a través de nuestro formulario o por WhatsApp para agendar una reunión.
+                Atención personalizada para compra, venta y alquiler de propiedades.
             </p>
         </div>
 
@@ -205,24 +208,23 @@
             class="bg-white border border-[#ECE7EC] p-12 flex flex-col items-center text-center hover:bg-[#3E153D] transition-all duration-300 group">
 
             <div
-                class="w-20 h-20 rounded-full bg-[#F8F3F8] flex items-center justify-center mb-6 group-hover:bg-white/10 transition">
+                class="w-10 h-10 md:w-20 md:h-20 rounded-full bg-[#F8F3F8] flex items-center justify-center mb-6 group-hover:bg-white/10 transition">
 
                 <svg xmlns="http://www.w3.org/2000/svg"
-                    class="w-9 h-9 text-[#3E153D] group-hover:text-white transition"
+                    class="w-8 h-8 text-[#3E153D] group-hover:text-white transition"
                     fill="none" viewBox="0 0 24 24" stroke="currentColor"
                     stroke-width="1.5">
                     <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M8 21V8m8 13V3M4 21h16" />
+                        d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01" />
                 </svg>
             </div>
 
-            <h2 class="text-2xl font-bold text-[#2F2F2F] group-hover:text-white mb-2 transition">
+            <h2 class="text-md md:text-2xl font-bold text-[#2F2F2F] group-hover:text-white mb-2 transition">
                 Buenos Aires
             </h2>
 
             <p class="text-sm text-gray-500 group-hover:text-white/70 leading-relaxed transition">
-                Atención personalizada para compra, venta y alquiler de propiedades. A cargo de _____.
-                Contacnos a través de nuestro formulario o por WhatsApp para agendar una reunión.
+                Atención personalizada para compra, venta y alquiler de propiedades. Con cita previa. A cargo de Fedra Sandoval.
             </p>
         </div>
 

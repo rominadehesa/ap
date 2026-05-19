@@ -8,13 +8,8 @@
 
         @include('frames.nav')
 
-        <main class="">
-            <div class="animate-fade-up">
-                <h1 class="text-5xl md:text-6xl text-start md:text-center text-[#fff] leading-tight mb-4">
-                    Soluciones inmobiliarias
-                </h1>
-            </div>
-
+        <main class="flex justify-start items-center">
+            <img src="{{ asset('images/logo/logo aps .png') }}" alt="" srcset="" class="w-[150px] ">
         </main>
 
     </header>
@@ -25,13 +20,13 @@
         <div class="text-left text-center md:px-0">
 
             <div class="flex justify-start md:justify-center mb-8 md:mb-10">
-                <span class="inline-block text-[11px] tracking-[0.25em] uppercase text-[#F2BF14] font-semibold">
+                <span class="inline-block text-[16px] tracking-[0.10em] uppercase text-[#F2BF14] font-semibold">
                     Conocé nuestras soluciones
                 </span>
             </div>
 
             <h1 class="text-3xl md:text-5xl text-start md:text-center text-[#fff] leading-tight mb-4">
-                Llegaste a un lugar donde tu propiedad<br class="none md:block"> <strong
+                Llegaste al lugar donde tu propiedad <strong
                     class="text-[#F2BF14] md:opacity-0 md:animate-[fadeDown_2s_ease-out_forwards]">
                     está en buenas manos</strong>
             </h1>
@@ -49,8 +44,7 @@
         <div class="flex flex-col md:flex-row mt-10 md:mt-16">
 
             <!-- CARD 1 -->
-            <div
-                class="w-full border-b md:border-b-0 md:border-r border-white/30 p-6  pl-1 md:p-8 hover:bg-[#3E153D] hover:border-[#F2BF14] hover:rounded-lg transition-all duration-300">
+            <div class="w-full flex flex-col justify-between border-b md:border-b-0 md:border-r border-white/30 p-6  pl-1 md:p-8 hover:bg-[#3E153D] hover:border-[#F2BF14] hover:rounded-lg transition-all duration-300">
 
                 <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -66,16 +60,16 @@
                             Venta de propiedades
                         </p>
 
-                        <p class="text-white/50 leading-[1.7]">
+                        <p class="text-white/50 leading-[1.7] line-clamp-5">
                             Diseñamos un plan de marketing con publicidad dirigida,
                             fotografía y video para lograr mayor visibilidad y encontrar
                             al comprador adecuado.
                         </p>
                     </div>
-
-                    <div class="mt-4 md:mt-2">
-                        <a href="#contacto" class="text-white text-sm bg-transparent border-white border-b">
-                            Consultar →
+                    <br>
+                    <div class="mt-8 flex items-end justify-end gap-3">
+                        <a href="#contacto" class="text-[#3E153D] bg-[#F2BF14] text-md px-6 py-2 transition rounded-lg">
+                            Consultar
                         </a>
                     </div>
                 </div>
@@ -83,7 +77,7 @@
 
             <!-- CARD 2 -->
             <div
-                class="w-full border-b md:border-b-0 md:border-r border-white/30 p-6  pl-1 md:p-8 hover:bg-[#3E153D] hover:border-[#F2BF14] hover:rounded-lg transition-all duration-300">
+                class="w-full flex flex-col justify-between border-b md:border-b-0 md:border-r border-white/30 p-6  pl-1 md:p-8 hover:bg-[#3E153D] hover:border-[#F2BF14] hover:rounded-lg transition-all duration-300">
 
                 <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -114,9 +108,10 @@
                         </p>
                     </div>
 
-                    <div class="mt-4 md:mt-2">
-                        <a href="#contacto" class="text-white text-sm bg-transparent border-white border-b">
-                            Consultar →
+                    <br>
+                    <div class="mt-8 flex items-end justify-end gap-3">
+                        <a href="#contacto" class="text-[#3E153D] bg-[#F2BF14] text-md px-6 py-2 transition rounded-lg">
+                            Consultar
                         </a>
                     </div>
                 </div>
@@ -124,7 +119,7 @@
 
             <!-- CARD 3 -->
             <div
-                class="w-full p-6 pl-1 md:p-8 hover:border-r hover:bg-[#3E153D] hover:border-[#F2BF14] hover:rounded-lg transition-all duration-300">
+                class="w-full flex flex-col justify-between p-6 pl-1 md:p-8 hover:border-r hover:bg-[#3E153D] hover:border-[#F2BF14] hover:rounded-lg transition-all duration-300">
 
                 <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -144,15 +139,16 @@
                             Asesoramiento legal
                         </p>
 
-                        <p class="text-white/50 leading-[1.7]">
+                        <p class="text-white/50 leading-[1.7] line-clamp-4">
                             Revisión de contratos y documentación para proteger tus intereses
                             en cada transacción.
                         </p>
                     </div>
 
-                    <div class="mt-4 md:mt-2">
-                        <a href="#contacto" class="text-white text-sm bg-transparent border-white border-b">
-                            Consultar →
+                    <br>
+                    <div class="mt-8 flex items-end justify-end gap-3">
+                        <a href="#contacto" class="text-[#3E153D] bg-[#F2BF14] text-md px-6 py-2 transition rounded-lg">
+                            Consultar
                         </a>
                     </div>
                 </div>
@@ -162,18 +158,18 @@
     </section>
 
     <section id="explorar" class="bg-[#f7eef9]">
-        <div class="flex justify-start md:justify-start">
-            <span class="text-center text-md mb-10 span-tag">Explorar</span>
-        </div>
+        <div class="flex justify-start mb-8 md:mb-10">
+                <span class="inline-block text-[16px] tracking-[0.10em] uppercase text-[#3E153D] font-extrabold">
+                    EXPLORAR
+                </span>
+            </div>
         <div class="md:flex md:justify-between md:gap-20">
             <div class="w-full md:w-[40%]">
-                <h1 class="text-4xl md:text-5xl text-start mb-8">Encontrá la propiedad que estas buscando</h1>
+                <h1 class="text-4xl md:text-5xl text-start mb-6">Encontrá la propiedad que estas buscando</h1>
                 <div class="leading-[1.7] text-start">
-                    <p>Seleccionamos las mejores oportunidades del mercado. Desde casas y departamentos hasta lotes,
+                    <p class="mb-10">Seleccionamos las mejores oportunidades del mercado. Desde casas y departamentos hasta lotes,
                         tenemos opciones para cada necesidad y presupuesto.</p>
-                    <br>
-                    <a href="{{ route('todas-propiedades') }}"
-                        class="text-[#3E153D] border-b border-[#3E153D] text-md font-extrabold transition">
+                    <a href="{{ route('todas-propiedades') }}" class="text-[#3E153D] bg-[#F2BF14] text-md px-6 py-2 transition rounded-lg">
                         Ver todas las propiedades →
                     </a>
                 </div>
@@ -181,7 +177,7 @@
             <div class="w-full md:w-[50%] overflow-hidden mt-10 md:mt-0">
                 <div class="flex gap-2 overflow-x-auto snap-x snap-mandatory pb-2">
                     @foreach ($propiedades as $item)
-                        <article class="bg-white w-80 rounded-lg shadow p-1 shrink-0">
+                        <article class="bg-white w-80 rounded-lg shadow shadow-lg p-1 shrink-0">
                             <div class="w-full h-[150px] bg-[#f1f1f1]">
                                 <img src="{{ asset('storage/' . $item->imagen_portada_url) }}"
                                     class="w-full h-full object-cover">
@@ -226,9 +222,7 @@
 
                                     <!-- BOTON -->
                                     <a href="{{ route('ver-propiedad', $item->id) }}"
-                                        class="inline-flex items-center gap-1 text-sm font-semibold text-[#1a0a19] hover:text-[#4b1d49] transition">
-
-                                        Ver más
+                                        class="text-[#f1f1f1] bg-[#3E153D] text-sm py-2 transition rounded-3xl w-8 h-8 flex items-center justify-center">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor">
@@ -252,21 +246,21 @@
     <section id="quiénessomos" class="p-0 m-0">
         <div class="md:flex md:justify-between">
             <div class="w-full md:w-[35vw] contenedor pr-0">
-                <div class="flex justify-start mb-8">
-                    <span class="text-center text-md span-tag">Detrás de APS</span>
+                <div class="flex justify-start  mb-8 md:mb-10">
+                    <span class="inline-block text-[16px] tracking-[0.10em] uppercase text-[#F2BF14] font-semibold">
+                        Detrás de APS
+                    </span>
                 </div>
                 <h1 class="text-start text-4xl md:text-5xl md:text-5xl mb-8">Comprometidas con cada operación</h1>
                 <div>
-                    <p class="leading-[1.7]">Nos enfocamos en ofrecer un asesoramiento claro, responsable y
+                    <p class="leading-[1.7] mb-10">Nos enfocamos en ofrecer un asesoramiento claro, responsable y
                         cercano, entendiendo las
                         necesidades
                         de cada cliente y trabajando para lograr operaciones seguras, eficientes y satisfactorias para
                         todas
                         las partes.</p>
-                    <br>
-                    <a href="{{ route('todas-propiedades') }}"
-                        class="text-[#3E153D] border-b border-[#3E153D] text-md font-extrabold transition">
-                        Ver mas sobre APS →
+                    <a href="{{ route('quienes-somos') }}" class="text-[#3E153D] bg-[#F2BF14] text-md px-6 py-2 transition rounded-lg">
+                        Conocé más sobre nosotros →
                     </a>
                 </div>
             </div>

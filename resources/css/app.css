@@ -73,7 +73,7 @@ header nav {
 
 header main {
     height: auto;
-    background: rgba(0, 0, 0, 0.4);
+    background: color-mix(in srgb, #442304 60%, transparent);
 }
 
 nav ul li {
@@ -168,10 +168,4 @@ nav ul li {
     #quiénessomos .span-tag {
         padding: 0.5vh 2vh;
     }
-
-
-    header main {
-        height: 40vh;
-    }
-
 }
