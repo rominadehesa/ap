@@ -61,19 +61,9 @@ h1 {
     font-family: "DM Sans", sans-serif;
 }
 
-header {
-    background-image: url('../../public/images/portada.jpg');
-    background-size: cover;
-    background-position: center;
-}
 
 header nav {
     background-color: var(--text-black);
-}
-
-header main {
-    height: auto;
-    background: color-mix(in srgb, #442304 60%, transparent);
 }
 
 nav ul li {
