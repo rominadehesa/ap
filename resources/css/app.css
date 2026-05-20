@@ -143,9 +143,8 @@ nav ul li {
 /* Celular */
 @media (max-width: 768px) {
 
-    body>section,
-    footer {
-        padding: 10vh 8vw;
+    body>section, footer, header > main {
+        padding: 20vh 8vw;
     }
 
     #quiénessomos .contenedor {

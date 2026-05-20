@@ -4,11 +4,32 @@
 @include('frames.head', ['title' => 'Inicio'])
 
 <body>
-    <header>
-        @include('frames.nav')
-        <main>
+     <header class="relative w-full h-50 md:h-screen overflow-hidden">
 
+        {{-- VIDEO DE FONDO --}}
+        <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover z-0"
+        >
+            <source src="{{ asset('images/header.mp4') }}" type="video/mp4">
+        </video>
+
+        {{-- OVERLAY OPCIONAL (oscurece el video para que se lea mejor el contenido) --}}
+        <div class="absolute inset-0 bg-black/20 z-10"></div>
+
+        {{-- NAV --}}
+        <div class="relative z-20">
+            @include('frames.nav')
+        </div>
+
+        {{-- LOGO --}}
+        <main class="relative z-20 flex justify-start items-end md:items-center h-full">
+            <img src="{{ asset('images/logo/logo aps b  - copia.png') }}" alt="" class="w-[150px] md:w-[280px]">
         </main>
+
     </header>
 
     <section id="explorar" class="bg-[#fafafa]">
