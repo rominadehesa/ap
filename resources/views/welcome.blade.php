@@ -18,6 +18,16 @@
             <source src="{{ asset('images/header.mp4') }}" type="video/mp4">
         </video>
 
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var video = document.getElementById('header-video');
+                video.play().catch(function() {
+                    video.muted = true;
+                    video.play();
+                });
+            });
+        </script>
+
         {{-- OVERLAY OPCIONAL (oscurece el video para que se lea mejor el contenido) --}}
         <div class="absolute inset-0 bg-black/20 z-10"></div>
 
