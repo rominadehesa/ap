@@ -12,6 +12,7 @@
             muted
             loop
             playsinline
+            webkit-playsinline
             class="absolute inset-0 w-full h-full object-cover z-0"
         >
             <source src="{{ asset('images/header.mp4') }}" type="video/mp4">
