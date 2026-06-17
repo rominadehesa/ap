@@ -8,7 +8,7 @@
 <div class="flex h-screen overflow-hidden">
 
     <!-- Sidebar -->
-    <aside class="w-64 bg-[#1a0a19] text-white flex flex-col p-6">
+    <aside class="w-64 bg-[#1a0a19] text-white hidden md:flex md:flex-col p-6">
 
         <h2 class="text-xl font-bold mb-10">Inmobiliaria</h2>
 
@@ -22,7 +22,7 @@
         <div class="flex-1"></div>
 
         <div class="mt-10 text-sm opacity-70">
-            Panel admin
+            Panel para administrar tus propiedades
         </div>
 
     </aside>
@@ -38,8 +38,9 @@
             </h1>
 
             <div class="flex items-center gap-4 text-sm">
-                <span class="text-gray-500">Admin</span>
+                <span class="text-gray-500">Usuario</span>
                 <div class="w-8 h-8 bg-gray-300 rounded-full"></div>
+                <a href="{{ route('logout') }}" class="text-blue-500 hover:underline">Cerrar sesión</a>
             </div>
 
         </header>

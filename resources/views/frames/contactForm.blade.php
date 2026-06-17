@@ -14,7 +14,7 @@
             <div class="flex items-center gap-3">
 
                 {{-- Instagram --}}
-                <a href="#" target="_blank"
+                <a href="https://www.instagram.com/apinmobiliariatandil/" target="_blank"
                     class="w-9 h-9 rounded-xl bg-[#471c4620] flex items-center justify-center text-[#3E153D] hover:bg-[#3E153D] hover:text-white transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                         <path
@@ -22,17 +22,22 @@
                     </svg>
                 </a>
 
-                {{-- TikTok --}}
-                <a href="#" target="_blank"
+                
+               <a href="https://www.facebook.com/apinmobiliariatandil" target="_blank"
                     class="w-9 h-9 rounded-xl bg-[#471c4620] flex items-center justify-center text-[#3E153D] hover:bg-[#3E153D] hover:text-white transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 24 24">
                         <path
-                            d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z" />
+                            d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5.04 3.66 9.22 8.44 10V15H7.9v-2.93h2.54V9.84c0-2.52 1.49-3.91 3.78-3.91 1.1 0 2.25.2 2.25.2v2.48H15.2c-1.25 0-1.64.78-1.64 1.58v1.88h2.79l-.45 2.93h-2.34v7.07C18.34 21.29 22 17.11 22 12.07z" />
                     </svg>
+
                 </a>
 
                 {{-- Email --}}
-                <a href="mailto:apinmobliariatandil@gmail.com"
+                <a href="mailto:apinmobiliariatandil@gmail.com"
                     class="w-9 h-9 rounded-xl bg-[#471c4620] flex items-center justify-center text-[#3E153D] hover:bg-[#3E153D] hover:text-white transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" stroke-width="2">
@@ -75,6 +80,86 @@
                 Te respondemos a la brevedad. Y no te preocupes, tu información está segura con nosotros.
             </span>
         </form>
+
+    </div>
+    <div class="w-full mt-20">
+
+        <div class="flex items-center justify-center">
+
+            <div class="text-center mb-10">
+                <h1 class="text-lg md:text-3xl mb-2">¿Preferís una atención más rápida?</h1>
+                <p class="leading-[1.7]">Escribinos directamente por WhatsApp y te responderemos a la brevedad.</p>
+            </div>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <!-- AP -->
+            <a href="https://wa.me/5492494591111" target="_blank"
+                class="flex items-center gap-3 p-4 bg-white rounded-xl hover:bg-[#25D36610] transition">
+                <div class="w-10 h-10 rounded-xl bg-[#25D36620] flex items-center justify-center text-[#25D366]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"
+                        class="w-5 h-5">
+                        <path
+                            d="M16.04 3C8.84 3 3 8.84 3 16.04c0 2.54.73 5.01 2.12 7.14L3 29l5.99-2.08a13 13 0 007.05 2.06C23.24 28.98 29 23.18 29 16.04 29 8.84 23.24 3 16.04 3zm0 23.7c-2.16 0-4.27-.58-6.12-1.69l-.44-.26-3.55 1.23 1.19-3.64-.29-.46a10.67 10.67 0 1119.88-5.84c0 5.89-4.79 10.66-10.67 10.66zm5.85-8.01c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.5-.16-.71.16-.21.31-.81 1.05-.99 1.26-.18.21-.36.24-.68.08-.32-.16-1.34-.49-2.56-1.57-.95-.84-1.59-1.87-1.77-2.18-.18-.32-.02-.49.13-.65.14-.14.32-.36.48-.54.16-.18.21-.31.32-.52.11-.21.05-.39-.03-.55-.08-.16-.71-1.71-.98-2.34-.25-.6-.5-.52-.71-.53h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.64s1.13 3.07 1.29 3.28c.16.21 2.21 3.37 5.35 4.72.75.32 1.34.51 1.8.65.76.24 1.46.2 2.01.12.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.13-.29-.21-.61-.37z" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-semibold text-[#3E153D]">AP Soluciones</p>
+                    <p class="text-sm text-gray-600">+54 9 2494 591-111</p>
+                </div>
+            </a>
+
+            <!-- Lucía -->
+            <a href="https://wa.me/5492494361497" target="_blank"
+                class="flex items-center gap-3 p-4 bg-white rounded-xl hover:bg-[#25D36610] transition">
+                <div class="w-10 h-10 rounded-xl bg-[#25D36620] flex items-center justify-center text-[#25D366]">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"
+                class="w-5 h-5">
+                <path
+                    d="M16.04 3C8.84 3 3 8.84 3 16.04c0 2.54.73 5.01 2.12 7.14L3 29l5.99-2.08a13 13 0 007.05 2.06C23.24 28.98 29 23.18 29 16.04 29 8.84 23.24 3 16.04 3zm0 23.7c-2.16 0-4.27-.58-6.12-1.69l-.44-.26-3.55 1.23 1.19-3.64-.29-.46a10.67 10.67 0 1119.88-5.84c0 5.89-4.79 10.66-10.67 10.66zm5.85-8.01c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.5-.16-.71.16-.21.31-.81 1.05-.99 1.26-.18.21-.36.24-.68.08-.32-.16-1.34-.49-2.56-1.57-.95-.84-1.59-1.87-1.77-2.18-.18-.32-.02-.49.13-.65.14-.14.32-.36.48-.54.16-.18.21-.31.32-.52.11-.21.05-.39-.03-.55-.08-.16-.71-1.71-.98-2.34-.25-.6-.5-.52-.71-.53h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.64s1.13 3.07 1.29 3.28c.16.21 2.21 3.37 5.35 4.72.75.32 1.34.51 1.8.65.76.24 1.46.2 2.01.12.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.13-.29-.21-.61-.37z" />
+            </svg>
+                </div>
+                <div>
+                    <p class="font-semibold text-[#3E153D]">Lucía</p>
+                    <p class="text-sm text-gray-600">+54 9 2494 361-497</p>
+                </div>
+            </a>
+
+            <!-- Yanina -->
+            <a href="https://wa.me/5492494356779" target="_blank"
+                class="flex items-center gap-3 p-4 bg-white rounded-xl hover:bg-[#25D36610] transition">
+                <div class="w-10 h-10 rounded-xl bg-[#25D36620] flex items-center justify-center text-[#25D366]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"
+                class="w-5 h-5">
+                <path
+                    d="M16.04 3C8.84 3 3 8.84 3 16.04c0 2.54.73 5.01 2.12 7.14L3 29l5.99-2.08a13 13 0 007.05 2.06C23.24 28.98 29 23.18 29 16.04 29 8.84 23.24 3 16.04 3zm0 23.7c-2.16 0-4.27-.58-6.12-1.69l-.44-.26-3.55 1.23 1.19-3.64-.29-.46a10.67 10.67 0 1119.88-5.84c0 5.89-4.79 10.66-10.67 10.66zm5.85-8.01c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.5-.16-.71.16-.21.31-.81 1.05-.99 1.26-.18.21-.36.24-.68.08-.32-.16-1.34-.49-2.56-1.57-.95-.84-1.59-1.87-1.77-2.18-.18-.32-.02-.49.13-.65.14-.14.32-.36.48-.54.16-.18.21-.31.32-.52.11-.21.05-.39-.03-.55-.08-.16-.71-1.71-.98-2.34-.25-.6-.5-.52-.71-.53h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.64s1.13 3.07 1.29 3.28c.16.21 2.21 3.37 5.35 4.72.75.32 1.34.51 1.8.65.76.24 1.46.2 2.01.12.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.13-.29-.21-.61-.37z" />
+            </svg>
+                </div>
+                <div>
+                    <p class="font-semibold text-[#3E153D]">Yanina</p>
+                    <p class="text-sm text-gray-600">+54 9 2494 356-779</p>
+                </div>
+            </a>
+
+            <!-- Fedra -->
+            <a href="https://wa.me/5492494535251" target="_blank"
+                class="flex items-center gap-3 p-4 bg-white rounded-xl hover:bg-[#25D36610] transition">
+                <div class="w-10 h-10 rounded-xl bg-[#25D36620] flex items-center justify-center text-[#25D366]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"
+                class="w-5 h-5">
+                <path
+                    d="M16.04 3C8.84 3 3 8.84 3 16.04c0 2.54.73 5.01 2.12 7.14L3 29l5.99-2.08a13 13 0 007.05 2.06C23.24 28.98 29 23.18 29 16.04 29 8.84 23.24 3 16.04 3zm0 23.7c-2.16 0-4.27-.58-6.12-1.69l-.44-.26-3.55 1.23 1.19-3.64-.29-.46a10.67 10.67 0 1119.88-5.84c0 5.89-4.79 10.66-10.67 10.66zm5.85-8.01c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.5-.16-.71.16-.21.31-.81 1.05-.99 1.26-.18.21-.36.24-.68.08-.32-.16-1.34-.49-2.56-1.57-.95-.84-1.59-1.87-1.77-2.18-.18-.32-.02-.49.13-.65.14-.14.32-.36.48-.54.16-.18.21-.31.32-.52.11-.21.05-.39-.03-.55-.08-.16-.71-1.71-.98-2.34-.25-.6-.5-.52-.71-.53h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.64s1.13 3.07 1.29 3.28c.16.21 2.21 3.37 5.35 4.72.75.32 1.34.51 1.8.65.76.24 1.46.2 2.01.12.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.13-.29-.21-.61-.37z" />
+            </svg>
+                </div>
+                <div>
+                    <p class="font-semibold text-[#3E153D]">Fedra</p>
+                    <p class="text-sm text-gray-600">+54 9 2494 53-5251</p>
+                </div>
+            </a>
+
+        </div>
 
     </div>
 </section>

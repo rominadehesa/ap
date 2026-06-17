@@ -4,16 +4,10 @@
 @include('frames.head', ['title' => 'Inicio'])
 
 <body>
-     <header class="relative w-full h-50 md:h-screen overflow-hidden">
+    <header class="relative w-full h-50 md:h-screen overflow-hidden">
 
         {{-- VIDEO DE FONDO --}}
-        <video
-            autoplay
-            muted
-            loop
-            playsinline
-            class="absolute inset-0 w-full h-full object-cover z-0"
-        >
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
             <source src="{{ asset('images/header.mp4') }}" type="video/mp4">
         </video>
 
@@ -38,7 +32,7 @@
             <div class="w-full md:w-[30vw]">
                 <div class="flex justify-start  mb-8 md:mb-10">
                     <span class="inline-block text-[16px] tracking-[0.10em] uppercase text-[#F2BF14] font-semibold">
-                       Quiénes somos
+                        Quiénes somos
                     </span>
                 </div>
                 <h1 class="text-start text-4xl md:text-5xl">Más que una inmobiliaria,</h1>
@@ -57,7 +51,8 @@
                         class="flex items-center gap-6 reveal opacity-0 translate-y-2 transition duration-1200 ease-out"
                         id="valores">
                         <div class="w-full">
-                            <h3 class="text-3xl md:text-4xl md:text-6xl font-bold">+<span class="counter" data-target="10">0></span>
+                            <h3 class="text-3xl md:text-4xl md:text-6xl font-bold">+<span class="counter"
+                                    data-target="15">0></span>
                             </h3>
                         </div>
                         <div>
@@ -68,7 +63,8 @@
                         class="flex items-center gap-6 reveal opacity-0 translate-y-2 transition duration-1200 ease-out"
                         id="valores">
                         <div class="w-full">
-                            <h3 class="text-3xl md:text-4xl md:text-6xl font-bold">+<span class="counter" data-target="80">0></span>
+                            <h3 class="text-3xl md:text-4xl md:text-6xl font-bold">+<span class="counter"
+                                    data-target="80">0></span>
                             </h3>
                         </div>
                         <div>
@@ -94,13 +90,13 @@
     <section class="bg-[#f7eef9]">
         <div class="text-center mb-14">
             <div class="flex justify-center  mb-8 md:mb-10">
-                    <span class="inline-block text-[16px] tracking-[0.10em] uppercase text-[#F2BF14] font-semibold">
-                        Nuestro equipo
-                    </span>
-                </div>
+                <span class="inline-block text-[16px] tracking-[0.10em] uppercase text-[#F2BF14] font-semibold">
+                    Nuestro equipo
+                </span>
+            </div>
 
             <h1 class="text-3xl md:text-5xl font-bold text-[#2F2F2F]">
-               Quiénes somos detras de APS
+                Quiénes somos detras de AP+S
             </h1>
         </div>
         <div class="md:flex gap-4">
@@ -114,10 +110,22 @@
                 <div class="p-5">
                     <p class="text-[10px] font-bold tracking-widest uppercase text-[#F2BF14] mb-1">Socia fundadora</p>
                     <p class="text-lg font-extrabold text-[#2F2F2F] mb-1">Yanina Alaguibe</p>
-                    <p class="text-xs font-semibold text-[#3E153D] mb-3">Martillera y Corredora Inmobiliaria</p>
+                    <p class="text-xs font-semibold text-[#3E153D] mb-3">Martillera y Corredora Pública</p>
                     <hr class="border-[#f5f0f5] mb-3">
-                    <p class="text-xs text-gray-400 leading-relaxed">Con más de 15 años de trayectoria, acompaña cada
-                        operación con el criterio y la seriedad que una decisión importante merece.</p>
+                    <p class="text-xs text-gray-400 leading-[1.2]">
+                        Con más de 15 años de experiencia, acompaña a sus clientes en la tasación, compra, venta y
+                        administración de inmuebles urbanos y rurales.Con más de 15 años de experiencia, acompaña a sus
+                        clientes en la tasación, compra, venta y administración de inmuebles urbanos y rurales.
+                        Actualmente gestiona más de 100 administraciones, brindando un servicio basado en la confianza,
+                        la responsabilidad y la atención personalizada.
+                        <br>
+                        Forma parte del Consejo Directivo del Colegio de Martilleros de la ciudad de Azul, participando
+                        activamente en el fortalecimiento y desarrollo de la actividad profesional.
+                        <br>
+                        Trabaja con compromiso, experiencia y cercanía, ofreciendo un asesoramiento profesional y
+                        acompañando a cada cliente en cada operación inmobiliaria, con la seriedad y dedicación que cada
+                        proyecto merece.
+                    </p>
                 </div>
             </div>
 
@@ -131,10 +139,20 @@
                 <div class="p-5">
                     <p class="text-[10px] font-bold tracking-widest uppercase text-[#F2BF14] mb-1">Socia fundadora</p>
                     <p class="text-lg font-extrabold text-[#2F2F2F] mb-1">Lucia Petreigne</p>
-                    <p class="text-xs font-semibold text-[#3E153D] mb-3">Martillera y Corredora Inmobiliaria</p>
+                    <p class="text-xs font-semibold text-[#3E153D] mb-3">Martillera, Tasadora y Corredora Pública</p>
                     <hr class="border-[#f5f0f5] mb-3">
-                    <p class="text-xs text-gray-400 leading-relaxed">Especialista en asesoramiento personalizado y
-                        cierre de operaciones, acompañando cada proceso con dedicación y atención al detalle.</p>
+                    <p class="text-xs text-gray-400 leading-[1.2]">
+                        Con más de 20 años de trayectoria en una compañía de seguros, desarrolló una amplia experiencia
+                        en el asesoramiento y la atención personalizada de clientes. Martillera, tasadora y corredora
+                        pública matriculada, cuenta con la formación necesaria para abordar cada operación con criterio
+                        profesional y conocimiento del mercado. <br>
+
+                        Desde hace más de cinco años se dedica al rubro inmobiliario, acompañando a cada cliente con
+                        compromiso, profesionalismo y cercanía en una de las decisiones más importantes de su vida. Es
+                        socia activa, desde hace dos años, de la Cámara Argentina de Inmobiliarias Rurales, y su enfoque
+                        está puesto en construir vínculos de confianza duraderos, con un servicio transparente y
+                        personalizado.
+                    </p>
                 </div>
             </div>
 
@@ -148,9 +166,17 @@
                 <div class="p-5">
                     <p class="text-[10px] font-bold tracking-widest uppercase text-[#F2BF14] mb-1">Socia</p>
                     <p class="text-lg font-extrabold text-[#2F2F2F] mb-1">Fedra Sandoval</p>
-                    <p class="text-xs font-semibold text-[#3E153D] mb-3">Asesora Inmobiliaria</p>
+                    <p class="text-xs font-semibold text-[#3E153D] mb-3">Martillera y Corredora Pública</p>
                     <hr class="border-[#f5f0f5] mb-3">
-                    <p class="text-xs text-gray-400 leading-relaxed">Forma parte del equipo con vocación de servicio y compromiso genuino con cada cliente. Acompaña cada consulta con dedicación y claridad.</p>
+                    <p class="text-xs text-gray-400 leading-[1.2]">
+                        Con más de 30 años de experiencia en gestión y administración de negocios, su trayectoria abarca
+                        atención al cliente, relación con proveedores, administración financiera y coordinación
+                        operativa, desarrollando habilidades de organización, negociación y resolución de problemas.
+                        Hoy aplica todo ese recorrido al ámbito inmobiliario, acompañando a compradores y vendedores en
+                        una de las decisiones más importantes de sus vidas. <br> Su objetivo es brindar un servicio
+                        cercano, transparente y profesional, entendiendo que detrás de cada operación hay expectativas,
+                        proyectos y sueños que merecen ser atendidos con dedicación y compromiso.
+                    </p>
                 </div>
             </div>
 
@@ -159,101 +185,104 @@
 
     <section class="bg-[#F8F8F8] py-20">
 
-    <div class="text-center mb-14">
-         <div class="flex justify-center  mb-8 md:mb-10">
-                    <span class="inline-block text-[16px] tracking-[0.10em] uppercase text-[#F2BF14] font-semibold">
-                        Sucursales
-                    </span>
+        <div class="text-center mb-14">
+            <div class="flex justify-center  mb-8 md:mb-10">
+                <span class="inline-block text-[16px] tracking-[0.10em] uppercase text-[#F2BF14] font-semibold">
+                    Sucursales
+                </span>
+            </div>
+
+
+            <h1 class="text-3xl md:text-5xl font-bold text-[#2F2F2F]">
+                Nuestras oficinas
+            </h1>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3">
+
+            {{-- Rauch --}}
+            <div
+                class="bg-white border border-[#ECE7EC] p-12 flex flex-col items-center text-center hover:bg-[#3E153D] transition-all duration-300 group">
+
+                <!-- Icono -->
+
+                <h2 class="text-xl md:text-3xl font-bold text-[#2F2F2F] group-hover:text-white mb-6 transition">
+                    Rauch
+                </h2>
+
+                <div class="space-y-1">
+                    <p class="text-[#3E153D] font-semibold group-hover:text-white transition">
+                        Oficina Alaguibe Inmobiliaria
+                    </p>
+                    <p class="text-sm text-gray-500 group-hover:text-white/70 transition">
+                        Rondeau 956, Rauch
+                    </p>
+
+                    <p class="text-[#3E153D] font-semibold group-hover:text-white transition mt-4">
+                        Oficina Petreigne Inmobiliaria
+                    </p>
+                    <p class="text-sm text-gray-500 group-hover:text-white/70 transition">
+                        Moreno 561, Rauch
+                    </p>
                 </div>
 
-
-        <h1 class="text-3xl md:text-5xl font-bold text-[#2F2F2F]">
-            Nuestras oficinas
-        </h1>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3">
-
-        {{-- Oficina 1 --}}
-        <div
-            class="bg-white border border-[#ECE7EC] p-12 flex flex-col items-center text-center hover:bg-[#3E153D] transition-all duration-300 group">
-
-            <div
-                class="w-10 h-10 md:w-20 md:h-20 rounded-full bg-[#F8F3F8] flex items-center justify-center mb-6 group-hover:bg-white/10 transition">
-
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="w-8 h-8 text-[#3E153D] group-hover:text-white transition"
-                    fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    stroke-width="1.5">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01" />
-                </svg>
+                <p class="mt-6 text-sm text-gray-500 group-hover:text-white/70 leading-relaxed transition">
+                    Compra, venta y alquiler de propiedades.
+                </p>
             </div>
 
-            <h2 class="text-md md:text-2xl font-bold text-[#2F2F2F] group-hover:text-white mb-2 transition">
-                Rauch
-            </h2>
-
-            <p class="text-sm text-gray-500 group-hover:text-white/70 leading-relaxed transition">
-                Atención personalizada para compra, venta y alquiler de propiedades. A cargo de Yanina Alaguibe.
-            </p>
-        </div>
-
-        {{-- Oficina 2 --}}
-        <div
-            class="bg-[#FAFAFA] border border-[#ECE7EC] p-12 flex flex-col items-center text-center hover:bg-[#3E153D] transition-all duration-300 group">
-
+            {{-- Tandil --}}
             <div
-                class="w-10 h-10 md:w-20 md:h-20 rounded-full bg-[#F8F3F8] flex items-center justify-center mb-6 group-hover:bg-white/10 transition">
+                class="bg-[#FAFAFA] border border-[#ECE7EC] p-12 flex flex-col items-center text-center hover:bg-[#3E153D] transition-all duration-300 group">
 
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="w-8 h-8 text-[#3E153D] group-hover:text-white transition"
-                    fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    stroke-width="1.5">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01" />
-                </svg>
+                <!-- Icono -->
+
+                <h2 class="text-xl md:text-3xl font-bold text-[#2F2F2F] group-hover:text-white mb-6 transition">
+                    Tandil
+                </h2>
+
+                <p class="text-[#3E153D] font-semibold group-hover:text-white transition">
+                    Oficina Comercial
+                </p>
+
+                <p class="text-sm text-gray-500 group-hover:text-white/70 transition">
+                    Pinto 922, Tandil
+                </p>
+
+                <p class="mt-6 text-sm text-gray-500 group-hover:text-white/70 leading-relaxed transition">
+                    Compra, venta y alquiler de propiedades.
+                </p>
             </div>
 
-            <h2 class="text-md md:text-2xl font-bold text-[#2F2F2F] group-hover:text-white mb-2 transition">
-                Tandil
-            </h2>
-
-            <p class="text-sm text-gray-500 group-hover:text-white/70 leading-relaxed transition">
-                Atención personalizada para compra, venta y alquiler de propiedades.
-            </p>
-        </div>
-
-        {{-- Oficina 3 --}}
-        <div
-            class="bg-white border border-[#ECE7EC] p-12 flex flex-col items-center text-center hover:bg-[#3E153D] transition-all duration-300 group">
-
+            {{-- Buenos Aires --}}
             <div
-                class="w-10 h-10 md:w-20 md:h-20 rounded-full bg-[#F8F3F8] flex items-center justify-center mb-6 group-hover:bg-white/10 transition">
+                class="bg-white border border-[#ECE7EC] p-12 flex flex-col items-center text-center hover:bg-[#3E153D] transition-all duration-300 group">
 
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="w-8 h-8 text-[#3E153D] group-hover:text-white transition"
-                    fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    stroke-width="1.5">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01" />
-                </svg>
+                <!-- Icono -->
+
+                <h2 class="text-xl md:text-3xl font-bold text-[#2F2F2F] group-hover:text-white mb-6 transition">
+                    Buenos Aires
+                </h2>
+
+                <p class="text-[#3E153D] font-semibold group-hover:text-white transition">
+                    Atención Online
+                </p>
+
+                <p class="text-sm text-gray-500 group-hover:text-white/70 mb-6 transition">
+                    Contactanos desde cualquier lugar.
+                </p>
+
+                <a href="https://wa.me/5492494591111" target="_blank"
+                    class="font-extabold text-[#3E153D] group-hover:text-white transition">
+                    Escribinos por WhatsApp
+                </a>
             </div>
 
-            <h2 class="text-md md:text-2xl font-bold text-[#2F2F2F] group-hover:text-white mb-2 transition">
-                Buenos Aires
-            </h2>
-
-            <p class="text-sm text-gray-500 group-hover:text-white/70 leading-relaxed transition">
-                Atención personalizada para compra, venta y alquiler de propiedades. Con cita previa. A cargo de Fedra Sandoval.
-            </p>
         </div>
 
-    </div>
+    </section>
 
-</section>
 
-    
     @include('frames.contactForm')
 
     @include('frames.footer')
